@@ -164,26 +164,28 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 ## 9. Evidence (screenshots)
 
-### 9.1 VirtualBox port forwarding rules
+## 9. Evidence (screenshots)
+
+### 1. VirtualBox port forwarding rules
 ![VirtualBox port forwarding](screenshots/01-port-forwarding.png)
 
-### 9.2 Containers running (`docker compose ps`)
+### 2. Containers running (`docker compose ps`)
 ![Containers running](screenshots/02-docker-compose-ps.png)
 
-### 9.3 WordPress dashboard at `localhost:8080`
+### 3. WordPress dashboard at `localhost:8080`
 ![WordPress dashboard](screenshots/03-wordpress-dashboard.png)
 
-### 9.4 Post still visible after reboot
+### 4. Post still visible after reboot
 ![Post after reboot](screenshots/04-persistence-post.png)
 
-### 9.5 UFW firewall status
+### 5. UFW firewall status
 ![UFW status](screenshots/05-ufw-status.png)
 
-### 9.6 Backup test (`ls -lh ~/backups` and `backup.log`)
+### 6. Backup test (`ls -lh ~/backups` and `backup.log`)
 ![Backup test](screenshots/06-backup-test.png)
 
-### 9.7 Cron schedule (`crontab -l`)
+### 7. Cron schedule (`crontab -l`)
 ![Crontab](screenshots/07-crontab.png)
 
-### 9.8 Persistent Docker volumes (`docker volume ls`)
+### 8. Persistent Docker volumes (`docker volume ls`)
 ![Docker volumes](screenshots/08-docker-volumes.png)
