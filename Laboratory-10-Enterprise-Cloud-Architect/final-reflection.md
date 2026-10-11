@@ -1,6 +1,6 @@
 # Final Reflection – Mission 1 to Mission 10
 
-**Name:** Bryan Sicat
+**Name:** Bryan Sicat | [Glaiza Carmesis] | [Darlyn Mabutas] | [Rhon Jerald Sevilla] | [Alvinne Petina] 
 **Course:** CCM101 – Cloud Computing
 
 ## The journey
