@@ -9,7 +9,7 @@
 **Date:** October 11 2026
 
 ---
-![Data Persistence After Reboot](screenshots/04-persistence-post.png)
+
 ## 1. Overview
 
 This manual lets the client's IT team deploy, secure and maintain a WordPress site backed by MySQL. The stack runs in Docker containers on an Ubuntu Server VM, protected by UFW, with automatic daily database backups.
