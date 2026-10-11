@@ -162,30 +162,59 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 | `connection reset by peer` during pull | Unstable network | Re-run `docker compose up -d`; layers resume |
 | DB password change has no effect | Old password stored in `db_data` | Use `docker compose down -v` on a fresh setup only |
 
-## 9. Evidence (screenshots)
 
-## 9. Evidence (screenshots)
+## 9. Evidence (Screenshots)
 
-### 1. VirtualBox port forwarding rules
-![VirtualBox port forwarding](screenshots/01-port-forwarding.png)
+This section presents the screenshots documenting the configuration, deployment, security, automation, and testing of the Enterprise Cloud Architect project.
 
-### 2. Containers running (`docker compose ps`)
-![Containers running](screenshots/02-docker-compose-ps.png)
+### 9.1 VirtualBox Port Forwarding Rules
 
-### 3. WordPress dashboard at `localhost:8080`
-![WordPress dashboard](screenshots/03-wordpress-dashboard.png)
+This screenshot shows the VirtualBox NAT port forwarding rules configured to allow access to the web application and remote administration.
 
-### 4. Post still visible after reboot
-![Post after reboot](screenshots/04-persistence-post.png)
+![VirtualBox Port Forwarding Rules](screenshots/01-port-forwarding.png)
 
-### 5. UFW firewall status
-![UFW status](screenshots/05-ufw-status.png)
+### 9.2 Running Docker Containers
 
-### 6. Backup test (`ls -lh ~/backups` and `backup.log`)
-![Backup test](screenshots/06-backup-test.png)
+This screenshot verifies that the WordPress and MySQL containers are running using the `docker compose ps` command.
 
-### 7. Cron schedule (`crontab -l`)
-![Crontab](screenshots/07-crontab.png)
+![Running Docker Containers](screenshots/02-docker-compose-ps.png)
 
-### 8. Persistent Docker volumes (`docker volume ls`)
-![Docker volumes](screenshots/08-docker-volumes.png)
+### 9.3 WordPress Dashboard
+
+This screenshot shows the WordPress dashboard accessed through `http://localhost:8080` in the host computer's web browser.
+
+![WordPress Dashboard](screenshots/03-wordpress-dashboard.png)
+
+### 9.4 Data Persistence After Reboot
+
+This screenshot demonstrates that the WordPress post remains available after restarting the virtual machine, verifying that application data persists.
+
+![Data Persistence After Reboot](screenshots/04-persistence-post.png)
+
+### 9.5 UFW Firewall Status
+
+This screenshot shows the UFW firewall status and the configured rules for controlling incoming network traffic.
+
+![UFW Firewall Status](screenshots/05-ufw-status.png)
+
+### 9.6 Automated Database Backup Test
+
+This screenshot provides evidence of the automated database backup test, including the generated compressed backup files and backup log.
+
+![Automated Database Backup Test](screenshots/06-backup-test.png)
+
+### 9.7 Cron Job Schedule
+
+This screenshot shows the cron job configuration used to schedule the database backup script to run automatically.
+
+![Cron Job Schedule](screenshots/07-crontab.png)
+
+### 9.8 Persistent Docker Volumes
+
+This screenshot shows the Docker volumes used to preserve the WordPress application files and MySQL database data beyond the lifecycle of individual containers.
+
+![Persistent Docker Volumes](screenshots/08-docker-volumes.png)
+
+### Summary
+
+The screenshots provide supporting evidence of the project's infrastructure configuration, application deployment, firewall setup, automated backup process, scheduled tasks, and persistent storage. Together, they help document the implementation and verification of the Enterprise Cloud Architect project.
