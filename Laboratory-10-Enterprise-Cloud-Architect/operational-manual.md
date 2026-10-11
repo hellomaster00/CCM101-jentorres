@@ -165,56 +165,36 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 ## 9. Evidence (Screenshots)
 
-This section presents the screenshots documenting the configuration, deployment, security, automation, and testing of the Enterprise Cloud Architect project.
+The following screenshots provide evidence of the system configuration, deployment, security, automation, and testing.
 
 ### 9.1 VirtualBox Port Forwarding Rules
-
-This screenshot shows the VirtualBox NAT port forwarding rules configured to allow access to the web application and remote administration.
 
 ![VirtualBox Port Forwarding Rules](screenshots/01-port-forwarding.png)
 
 ### 9.2 Running Docker Containers
 
-This screenshot verifies that the WordPress and MySQL containers are running using the `docker compose ps` command.
-
 ![Running Docker Containers](screenshots/02-docker-compose-ps.png)
 
 ### 9.3 WordPress Dashboard
-
-This screenshot shows the WordPress dashboard accessed through `http://localhost:8080` in the host computer's web browser.
 
 ![WordPress Dashboard](screenshots/03-wordpress-dashboard.png)
 
 ### 9.4 Data Persistence After Reboot
 
-This screenshot demonstrates that the WordPress post remains available after restarting the virtual machine, verifying that application data persists.
-
 ![Data Persistence After Reboot](screenshots/04-persistence-post.png)
 
 ### 9.5 UFW Firewall Status
 
-This screenshot shows the UFW firewall status and the configured rules for controlling incoming network traffic.
-
 ![UFW Firewall Status](screenshots/05-ufw-status.png)
 
-### 9.6 Automated Database Backup Test
+### 9.6 Automated Backup Test
 
-This screenshot provides evidence of the automated database backup test, including the generated compressed backup files and backup log.
-
-![Automated Database Backup Test](screenshots/06-backup-test.png)
+![Automated Backup Test](screenshots/06-backup-test.png)
 
 ### 9.7 Cron Job Schedule
-
-This screenshot shows the cron job configuration used to schedule the database backup script to run automatically.
 
 ![Cron Job Schedule](screenshots/07-crontab.png)
 
 ### 9.8 Persistent Docker Volumes
 
-This screenshot shows the Docker volumes used to preserve the WordPress application files and MySQL database data beyond the lifecycle of individual containers.
-
 ![Persistent Docker Volumes](screenshots/08-docker-volumes.png)
-
-### Summary
-
-The screenshots provide supporting evidence of the project's infrastructure configuration, application deployment, firewall setup, automated backup process, scheduled tasks, and persistent storage. Together, they help document the implementation and verification of the Enterprise Cloud Architect project.
