@@ -8,8 +8,6 @@
 **Instructor:** Jenkielyn C. Torres
 **Date:** October 11 2026
 
-*Print size: Coupon 5.5 x 8.5 (portrait)*
-
 ---
 
 ## 1. Overview
