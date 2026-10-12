@@ -201,6 +201,12 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 ![Crontab](screenshots/07-crontab.png)
 
 
+### 9.8 Docker 
+*Figure 8: Listahan ng Docker volumes na ginagamit para sa persistent storage.*
+![Docker Volumes](screenshots/08-docker-volumes.png)
+
+
+
 **Restore procedure (tested)**
 
 ```bash
@@ -212,10 +218,6 @@ gunzip < "$LATEST" | docker exec -i cloudnova-mysql mysql -u root -p"$MYSQL_ROOT
 
 Verified by deleting a post, restoring the latest backup, and confirming the post returned.
 
-
-### 9.8 Docker 
-*Figure 8: Listahan ng Docker volumes na ginagamit para sa persistent storage.*
-![Docker Volumes](screenshots/08-docker-volumes.png)
 
 ## 10. Restoration
 
