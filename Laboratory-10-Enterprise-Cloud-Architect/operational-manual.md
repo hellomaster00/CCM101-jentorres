@@ -3,7 +3,6 @@
 
 **Project:** Secure Multi-Tier Web Application
 **Application Stack:** WordPress + MySQL
-
 **Prepared by:** Bryan Sicat | [Glaiza Carmesis] | [Darlyn Mabutas] | [Rhon Jerald Sevilla] | [Alvinne Petina] 
 **Section:** [BSIT 4-H]
 **Instructor:** Jenkielyn C. Torres
