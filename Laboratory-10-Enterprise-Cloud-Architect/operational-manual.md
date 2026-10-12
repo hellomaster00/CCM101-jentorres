@@ -201,6 +201,31 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 ![Crontab](screenshots/07-crontab.png)
 
 
+**Restore procedure (tested)**
+
+```bash
+cd ~/wordpress-stack
+source .env
+LATEST=$(ls -t ~/backups/wordpress_db_*.sql.gz | head -1)
+gunzip < "$LATEST" | docker exec -i cloudnova-mysql mysql -u root -p"$MYSQL_ROOT_PASSWORD" wordpress
+```
+
+Verified by deleting a post, restoring the latest backup, and confirming the post returned.
+
+
 ### 9.8 Docker 
 *Figure 8: Listahan ng Docker volumes na ginagamit para sa persistent storage.*
 ![Docker Volumes](screenshots/08-docker-volumes.png)
+
+## 10. Restoration
+
+### 9. Restore test: before (post deleted)
+![Restore before](screenshots/09-restore-before.png)
+
+### 10. Restore test: restore command
+![Restore command](screenshots/10-restore-command.png)
+
+### 11. Restore test: after (post recovered)
+![Restore after](screenshots/11-restore-after.png)
+
+
