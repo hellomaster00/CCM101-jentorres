@@ -2,8 +2,8 @@
 # CloudNova automated database backup
 set -euo pipefail
 
-BACKUP_DIR="/home/bryan/backups"
-STACK_DIR="/home/bryan/wordpress-stack"
+STACK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BACKUP_DIR="${BACKUP_DIR:-$HOME/backups}"
 DATE=$(date +%F_%H-%M-%S)
 
 source "$STACK_DIR/.env"
