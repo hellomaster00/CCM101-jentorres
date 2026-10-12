@@ -28,7 +28,9 @@ This manual lets the client's IT team deploy, secure and maintain a WordPress si
 ## 2. Architecture
 
 ## 2. Architecture Diagram
-![Architecture Diagram](architecture-diagram.png)
+
+![Architecture Diagram](screenshots/architecture-diagram.png)
+*Figure 1: Network topology at architecture ng Secure Multi-Tier WordPress + MySQL, mula sa host machine, VirtualBox, Ubuntu Server VM, UFW firewall, hanggang sa Docker containers at persistent volumes.*
 
 Layers, top to bottom: Host laptop (browser) → VirtualBox → Ubuntu Server VM → UFW firewall → Docker network `backend` → containers → persistent volumes. The cron job and backup script run on the VM and write to `/home/bryan/backups`.
 
