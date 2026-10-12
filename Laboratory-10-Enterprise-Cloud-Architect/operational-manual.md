@@ -166,33 +166,36 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 ## 9. Evidence (Screenshots)
 
 ### 9.1 Port Forwarding
-![Port Forwarding](screenshots/01-port-forwarding.png)
 *Figure 1: Port forwarding configuration para ma-access ang WordPress mula sa labas ng VM.*
+![Port Forwarding](screenshots/01-port-forwarding.png)
+
 
 ### 9.2 Docker Compose Status
-![Docker Compose PS](screenshots/02-docker-compose-ps.png)
 *Figure 2: Output ng `docker compose ps` na nagpapakitang running ang mga container.*
+![Docker Compose PS](screenshots/02-docker-compose-ps.png)
 
 ### 9.3 WordPress Dashboard
-![WordPress Dashboard](screenshots/03-wordpress-dashboard.png)
 *Figure 3: WordPress admin dashboard pagkatapos ng successful installation.*
+![WordPress Dashboard](screenshots/03-wordpress-dashboard.png)
 
 ### 9.4 Data Persistence
-![Persistence Post](screenshots/04-persistence-post.png)
 *Figure 4: Test post na nanatili pa rin matapos i-restart ang mga container.*
+![Persistence Post](screenshots/04-persistence-post.png)
+
 
 ### 9.5 Firewall Status
-![UFW Status](screenshots/05-ufw-status.png)
 *Figure 5: UFW status na nagpapakita ng mga allowed na port.*
+![UFW Status](screenshots/05-ufw-status.png)
 
 ### 9.6 Backup Test
-![Backup Test](screenshots/06-backup-test.png)
 *Figure 6: Resulta ng backup test gamit ang automation script.*
+![Backup Test](screenshots/06-backup-test.png)
 
 ### 9.7 Scheduled Backup (Cron)
-![Crontab](screenshots/07-crontab.png)
 *Figure 7: Crontab entry para sa automated na backup.*
+![Crontab](screenshots/07-crontab.png)
 
-### 9.8 Docker Volumes
-![Docker Volumes](screenshots/08-docker-volumes.png)
+
+### 9.8 Docker 
 *Figure 8: Listahan ng Docker volumes na ginagamit para sa persistent storage.*
+![Docker Volumes](screenshots/08-docker-volumes.png)
