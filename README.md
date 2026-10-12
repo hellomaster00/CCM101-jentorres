@@ -21,7 +21,7 @@ A private, hardened, self-backing-up WordPress deployment for CloudNova Technolo
 
 ## Architecture
 
-![Architecture diagram](architecture-diagram.png)
+![Architecture diagram](architecture-diagram_1.png)
 
 ## Quick start
 
