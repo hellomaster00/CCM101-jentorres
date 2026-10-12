@@ -221,6 +221,21 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 ## 11. KillerCoda (screenshots)
 
+### KillerCoda: containers running
+![KillerCoda containers](screenshots/12-killercoda-compose-ps.png)
+
+### KillerCoda: WordPress via Traffic / Ports
+![KillerCoda WordPress](screenshots/13-killercoda-wordpress.png)
+
+### KillerCoda: UFW status
+![KillerCoda UFW](screenshots/14-killercoda-ufw.png)
+
+### KillerCoda: backup run and cron proof
+![KillerCoda backup](screenshots/15-killercoda-backup.png)
+
+### KillerCoda: crontab
+![KillerCoda crontab](screenshots/16-killercoda-crontab.png)
+
 
 
 
