@@ -189,12 +189,12 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 ### 9.6 Backup Test
 *Figure 6: Resulta ng backup test gamit ang automation script.*
-
 ![Backup Test](screenshots/06-backup-test.png)
 
 
 ### 9.7 Scheduled Backup (Cron)
 *Figure 7: Crontab entry para sa automated na backup.*
+
 ![Crontab](screenshots/07-crontab.png)
 
 
