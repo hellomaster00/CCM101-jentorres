@@ -3,6 +3,7 @@
 **Project:** Secure Multi-Tier Web Application
 **Stack:** WordPress + MySQL 8.0 (Docker Compose) on Ubuntu Server (VirtualBox)
 **Course:** CCM101 – Cloud Computing
+
 **Name:** Bryan Sicat | [Glaiza Carmesis] | [Darlyn Mabutas] | [Rhon Jerald Sevilla] | [Alvinne Petina] 
 
 ## Summary
