@@ -207,16 +207,6 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 
 
-**Restore procedure (tested)**
-
-```bash
-cd ~/wordpress-stack
-source .env
-LATEST=$(ls -t ~/backups/wordpress_db_*.sql.gz | head -1)
-gunzip < "$LATEST" | docker exec -i cloudnova-mysql mysql -u root -p"$MYSQL_ROOT_PASSWORD" wordpress
-```
-
-Verified by deleting a post, restoring the latest backup, and confirming the post returned.
 
 
 ## 10. Restoration
