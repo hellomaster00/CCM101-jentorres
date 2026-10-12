@@ -25,7 +25,6 @@ This manual lets the client's IT team deploy, secure and maintain a WordPress si
 
 > Credentials are never stored in this repository. Use your own values in `.env`.
 
-## 2. Architecture
 
 ## 2. Architecture Diagram
 
