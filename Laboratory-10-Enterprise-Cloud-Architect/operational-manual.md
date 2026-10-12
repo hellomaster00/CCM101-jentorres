@@ -165,34 +165,18 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 ## 9. Evidence (Screenshots)
 
-### 9.1 VirtualBox Port Forwarding Rules
+![Port Forwarding](screenshots/01-port-forwarding.png)
 
-![VirtualBox Port Forwarding Rules](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/01-port-forwarding.png)
+![Docker Compose PS](screenshots/02-docker-compose-ps.png)
 
-### 9.2 Running Docker Containers
+![WordPress Dashboard](screenshots/03-wordpress-dashboard.png)
 
-![Running Docker Containers](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/02-docker-compose-ps.png)
+![Persistence Post](screenshots/04-persistence-post.png)
 
-### 9.3 WordPress Dashboard
+![UFW Status](screenshots/05-ufw-status.png)
 
-![WordPress Dashboard](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/03-wordpress-dashboard.png)
+![Backup Test](screenshots/06-backup-test.png)
 
-### 9.4 Data Persistence After Reboot
+![Crontab](screenshots/07-crontab.png)
 
-![Data Persistence After Reboot](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/04-persistence-post.png)
-
-### 9.5 UFW Firewall Status
-
-![UFW Firewall Status](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/05-ufw-status.png)
-
-### 9.6 Automated Backup Test
-
-![Automated Backup Test](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/06-backup-test.png)
-
-### 9.7 Cron Job Schedule
-
-![Cron Job Schedule](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/07-crontab.png)
-
-### 9.8 Persistent Docker Volumes
-
-![Persistent Docker Volumes](../Laboratory-10-Enterprise-Cloud-Architect/screenshots/08-docker-volumes.png)
+![Docker Volumes](screenshots/08-docker-volumes.png)
