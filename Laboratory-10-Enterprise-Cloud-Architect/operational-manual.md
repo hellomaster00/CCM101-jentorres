@@ -207,7 +207,6 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 
 
-
 ## 10. Restoration
 
 ### 9. Restore test: before (post deleted)
@@ -218,5 +217,35 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 ### 11. Restore test: after (post recovered)
 ![Restore after](screenshots/11-restore-after.png)
+
+
+## 11. KillerCoda (screenshots)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
