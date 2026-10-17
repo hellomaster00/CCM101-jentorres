@@ -209,9 +209,9 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 
 ![Hypervisor Settings VM 02](screenshots/vm-02-hypervisor-settings.png)
 
-![Network Config VM 03](screenshots/vm-03-network-config.png)
-
 ![Storage Settings VM 03](screenshots/vm-03-settingstorage.png)
+
+![Network Config VM 03](screenshots/vm-03-network-config.png)
 
 ![Network Info](screenshots/vm-network-info.png)
 
