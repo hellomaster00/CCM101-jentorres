@@ -205,15 +205,29 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 ![Docker Volumes](screenshots/08-docker-volumes.png)
 
 
+
+
+*Figure 9.9: Hypervisor settings ng VM 01.*
+
 ![Hypervisor Settings VM 01](screenshots/vm-01-hypervisor-settings.png)
+
+*Figure 10: Hypervisor settings ng VM 02.*
 
 ![Hypervisor Settings VM 02](screenshots/vm-02-hypervisor-settings.png)
 
-![Storage Settings VM 03](screenshots/vm-03-settingstorage.png)
+*Figure 11: Network configuration ng VM 03.*
 
 ![Network Config VM 03](screenshots/vm-03-network-config.png)
 
+*Figure 12: Storage settings ng VM 03.*
+
+![Storage Settings VM 03](screenshots/vm-03-settingstorage.png)
+
+*Figure 13: Network information ng VM matapos ang configuration.*
+
 ![Network Info](screenshots/vm-network-info.png)
+
+*Figure 14: Pag-reboot ng VM gamit ang `sudo reboot` para ma-apply ang mga pagbabago.*
 
 ![Sudo Reboot](screenshots/vm-sudoreboot.png)
 
