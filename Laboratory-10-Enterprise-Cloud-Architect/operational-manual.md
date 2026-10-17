@@ -263,6 +263,52 @@ gunzip < ~/backups/<file>.sql.gz | docker exec -i cloudnova-mysql mysql -u root 
 ![KillerCoda crontab](screenshots/16-killercoda-crontab.png)
 
 
+### 9.9 Docker Installation Verification
+*Figure 9: Output ng `docker --version` at `docker compose version` na nagpapakita ng naka-install na Docker 29.1.3 at Docker Compose 2.40.3.*
+
+![Docker Version](screenshots/killercoda-docker-version.png)
+
+### 9.10 MySQL Database Readiness Check
+*Figure 10: Output ng `docker compose logs db` na may filter na "ready for connections", na nagpapakita na handa na ang MySQL 8.0.46 ng `cloudnova-mysql` container sa port 3306 at ang X Plugin sa port 33060.*
+
+![MySQL Readiness Check](screenshots/killercoda-mysql-ready.png)
+
+### 9.11 WordPress Initial Installation Page
+*Figure 11: WordPress installation wizard (`/wp-admin/install.php`) na nagpapakita ng language selection, na nagpapatunay na matagumpay na na-deploy ang WordPress container at naa-access ito sa pamamagitan ng public URL.*
+
+![WordPress Installation Page](screenshots/killercoda-wordpress-install.png)
+
+### 9.12 WordPress Admin Post Editor
+*Figure 12: WordPress block editor na nagpapakita ng default na "Hello world!" post, na nagpapatunay na matagumpay ang installation at naka-login na ang admin sa site.*
+
+![WordPress Post Editor](screenshots/killercoda-wordpress-post-editor.png)
+
+### 9.13 WordPress Test Post Verification
+*Figure 13: Published na "Defense Test Post" sa WordPress site na nabubuksan sa browser, na nagpapatunay na gumagana ang WordPress at ang koneksyon nito sa database.*
+
+![WordPress Test Post](screenshots/killercoda-wordpress-test-post.png)
+
+### 9.14 Container Recreation and Volume Persistence Test
+*Figure 14: Pag-remove at pag-recreate ng `cloudnova-mysql` at `cloudnova-wordpress` containers, kung saan nanatili ang `db_data` at `wp_data` volumes, at muling nag-start ang dalawang container.*
+
+![Volume Persistence Test](screenshots/killercoda-volume-persistence.png)
+
+### 9.15 UFW Firewall Configuration
+*Figure 15: Active na UFW firewall na may default na `deny` para sa incoming traffic, at pinapayagan lang ang port 22/tcp (SSH) at 80/tcp (HTTP) sa IPv4 at IPv6.*
+
+![UFW Firewall Status](screenshots/killercoda-ufw-status.png)
+
+### 9.16 Automation Script Permissions and Manual Test Run
+*Figure 16: Executable na `automation-script.sh` (`-rwxr-xr-x`) at ang resulta ng manual na pag-run nito, kung saan nag-output ang `mysqldump` ng warning tungkol sa paggamit ng password sa command line.*
+
+![Automation Script Test](screenshots/killercoda-automation-script-test.png)
+
+### 9.17 Cron Job Scheduling and Service Status
+*Figure 17: Cron entry na nagpapatakbo ng `automation-script.sh` araw-araw ng 2:00 AM, at ang `cron.service` na active (running) at naka-enable.*
+
+![Cron Job Status](screenshots/killercoda-cron-status.png)
+
+
 
 
 
